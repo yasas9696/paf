@@ -1,0 +1,43 @@
+<div class="dive"> 
+  <mat-card class="matcard">
+      <mat-card-header><h2><b>Add Category</b></h2></mat-card-header>
+             
+              <mat-card-content class="container">
+  <form action="/action_page.php">
+
+    <label for="cname">Category Name</label>
+    <input type="text" name="Category Name" [(ngModel)]='category.cname' placeholder="Category Name..">
+<br>
+   
+
+
+    
+
+<br>
+
+    <label for="cname">Category Code</label>
+    <input type="text"  [(ngModel)]='category.ccode' name="CategoryCode" placeholder="category Code..">
+
+    
+
+    
+<br><br>
+<mat-card-actions class="buttonContainer">
+  <button mat-button color="warn" (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="addcategory()">Submit</button>
+  </mat-card-actions>
+ 
+    </form>
+
+   
+
+
+    
+    </mat-card-content>
+    </mat-card>
+    <br>
+   
+    </div>
+ 
+    
+ <app-allcategorys></app-allcategorys>
